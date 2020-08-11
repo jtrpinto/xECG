@@ -24,6 +24,9 @@ To ensure the PTB and UofTDB data is not redistributed, especially UofTDB, this 
 
 Do not forget to set the needed variables at the beginning of each script.
 
+### Model training details
+The model was trained over a maximum of 2500 (PTB) or 5000 (UofTDB) epochs with batch size 2N, using the Adam optimiser with initial learning rate 10^(-3). Early stopping was used, with patience of 100 (PTB) or 250 (UofTDB) epochs, based on loss values obtained in 10% of training data used for validation. As in (1), random permutations were used as data augmentation for model regularisation, as well as dropout, before the last fully-connected layer (p=0.2 for PTB and p=0.5 for UofTDB). For UofTDB, L2 weight regularisation was also used, with lambda=10^(-3).
+
 ## Setup
 To run our code, download or clone this repository and use *requirements.txt* to set up a pip virtual environment with the needed dependencies.
 
