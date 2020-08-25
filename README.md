@@ -10,7 +10,7 @@ This repository contains the code used for our paper on intepretability for ECG 
 
 If you want to know more about this, or if you use our code, check out our paper:    
 **J. R. Pinto and J. S. Cardoso, "Explaining ECG Biometrics: Is It All In The QRS?", in *Proceedings of the 19th International Conference of the Biometrics Special Interest Group (BIOSIG),* 2020.**    
-[[bib]](https://github.com/jtrpinto/xECG/blob/master/citation.bib)
+[[bib]](https://github.com/jtrpinto/xECG/blob/master/citation.bib) [[pdf]](https://jtrpinto.github.io/files/pdf/jpinto2020biosig.pdf)
 
 ## Description
 This repository includes the python scripts used to train, test, and interpret the models with PTB and UofTDB data. The *models* directory includes trained models with PTB, the *results* directory includes the test scores of each trained model, the *plots* directory includes explanation figures from the first two subjects of each database, and the *peak_locations* directory includes some annotations on the R-peaks of the first two subjects of each database and a script to label more.
