@@ -28,9 +28,7 @@ Do not forget to set the needed variables at the beginning of each script.
 We trained the model over a maximum of 2500 (PTB) or 5000 (UofTDB) epochs with batch size 2N, using the Adam optimiser with initial learning rate 10^(-3). Early stopping was used, with patience of 100 (PTB) or 250 (UofTDB) epochs, based on loss values obtained in 10% of training data used for validation. As in (1), random permutations were used as data augmentation for model regularisation, as well as dropout, before the last fully-connected layer (p=0.2 for PTB and p=0.5 for UofTDB). For UofTDB, L2 weight regularisation was also used, with lambda=10^(-3).
 
 ## Setup
-To run our code, download or clone this repository and use *requirements.txt* to set up a pip virtual environment with the needed dependencies.
-
-You will also need the data from the PTB and UofTDB databases. The PTB database is quickly accessible at [Physionet](https://physionet.org/content/ptbdb/1.0.0/). To get the UofTDB data, you should contact the [BioSec.Lab at the University of Toronto](https://www.comm.utoronto.ca/~biometrics/). 
+To run our code, download or clone this repository. You will also need the data from the PTB and UofTDB databases. The PTB database is quickly accessible at [Physionet](https://physionet.org/content/ptbdb/1.0.0/). To get the UofTDB data, you should contact the [BioSec.Lab at the University of Toronto](https://www.comm.utoronto.ca/~biometrics/). 
 
 ## Acknowledgements
 This work was financed by the ERDF - European Regional Development Fund through the Operational Programme for Competitiveness and Internationalization - COMPETE 2020 Programme and by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia within project "POCI-01-0145-FEDER-030707", and within the PhD grant "SFRH/BD/137720/2018". The authors wish to thank the creators and administrators of the PTB (Physikalisch-Technische Bundesanstalt, Germany) and UofTDB (University of Toronto, Canada) databases, which have been essential for this work.
